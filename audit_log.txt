@@ -10,3 +10,49 @@
 2025-03-05 19:18:05,036 - Datos cifrados correctamente.
 2025-03-05 19:18:05,050 - Datos procesados guardados en obesity_dataset.csv
 2025-03-05 19:18:05,050 - Archivo Obesity prediction.csv eliminado correctamente.
+2025-03-05 23:20:33,814 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 23:20:34,700 - Datos descargados exitosamente desde Kaggle
+2025-03-05 23:20:34,714 - Datos extraídos con éxito.
+2025-03-05 23:20:34,734 - Backup realizado en backup_data.csv
+2025-03-05 23:20:34,750 - Datos procesados guardados en obesity_dataset.csv
+2025-03-05 23:20:34,750 - Archivo Obesity prediction.csv eliminado correctamente.
+2025-03-05 23:21:41,428 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-05 23:21:41,428 - Modelo generado exitosamente.
+2025-03-05 23:21:43,729 - Código subido exitosamente a GitHub.
+2025-03-05 23:21:43,730 - Pipeline finalizado satisfactoriamente.
+2025-03-05 23:35:11,517 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 23:35:12,322 - Datos descargados exitosamente desde Kaggle
+2025-03-05 23:35:12,341 - Datos extraídos con éxito.
+2025-03-05 23:35:12,365 - Backup realizado en backup_data.csv
+2025-03-05 23:35:12,862 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-05 23:35:13,298 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-05 23:36:07,923 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-05 23:36:07,924 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
+2025-03-05 23:36:07,924 - Modelo generado exitosamente.
+2025-03-05 23:36:10,762 - Código subido exitosamente a GitHub.
+2025-03-05 23:36:10,763 - Pipeline finalizado satisfactoriamente.
+2025-03-05 23:38:45,460 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 23:38:46,264 - Datos descargados exitosamente desde Kaggle
+2025-03-05 23:38:46,284 - Datos extraídos con éxito.
+2025-03-05 23:38:46,305 - Backup realizado en backup_data.csv
+2025-03-05 23:38:46,782 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-05 23:38:47,204 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-05 23:39:44,106 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-05 23:39:44,107 - Error en el pipeline: [Errno 2] No such file or directory: 'modelo.ipynb.nbconvert.ipynb'
+2025-03-06 01:06:05,311 - Usuario admin ha iniciado sesión correctamente.
+2025-03-06 01:06:06,192 - Datos descargados exitosamente desde Kaggle
+2025-03-06 01:06:06,203 - Datos extraídos con éxito.
+2025-03-06 01:06:06,216 - Backup realizado en backup_data.csv
+2025-03-06 01:06:06,705 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-06 01:06:07,142 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-06 01:06:58,819 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-06 01:06:58,820 - Error en el pipeline: [Errno 2] No such file or directory: 'modelo.ipynb.nbconvert.ipynb'
+2025-03-06 01:11:07,515 - Usuario admin ha iniciado sesión correctamente.
+2025-03-06 01:11:08,564 - Datos descargados exitosamente desde Kaggle
+2025-03-06 01:11:08,578 - Datos extraídos con éxito.
+2025-03-06 01:11:08,598 - Backup realizado en backup_data.csv
+2025-03-06 01:11:09,089 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-06 01:11:09,529 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-06 01:11:58,735 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-06 01:11:58,736 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
+2025-03-06 01:11:58,736 - Modelo generado exitosamente.
