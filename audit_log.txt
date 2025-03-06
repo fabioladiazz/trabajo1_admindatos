@@ -67,3 +67,5 @@
 2025-03-06 11:11:38,723 - Notebook modelo.ipynb ejecutado correctamente.
 2025-03-06 11:11:38,724 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
 2025-03-06 11:11:38,724 - Modelo generado exitosamente.
+2025-03-06 11:11:40,075 - Error al subir a GitHub: Command '['git', 'push', 'origin', 'dev']' returned non-zero exit status 1.
+2025-03-06 11:11:40,076 - Error en el pipeline: Error al subir a GitHub
