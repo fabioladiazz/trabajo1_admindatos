@@ -69,3 +69,12 @@
 2025-03-06 11:11:38,724 - Modelo generado exitosamente.
 2025-03-06 11:11:40,075 - Error al subir a GitHub: Command '['git', 'push', 'origin', 'dev']' returned non-zero exit status 1.
 2025-03-06 11:11:40,076 - Error en el pipeline: Error al subir a GitHub
+2025-03-06 11:25:42,825 - Usuario admin ha iniciado sesión correctamente.
+2025-03-06 11:25:44,069 - Datos descargados exitosamente desde Kaggle
+2025-03-06 11:25:44,085 - Datos extraídos con éxito.
+2025-03-06 11:25:44,105 - Backup realizado en backup_data.csv
+2025-03-06 11:25:44,588 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-06 11:25:45,018 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-06 11:26:34,837 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-06 11:26:34,838 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
+2025-03-06 11:26:34,838 - Modelo generado exitosamente.
