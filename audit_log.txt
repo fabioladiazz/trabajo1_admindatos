@@ -18,3 +18,14 @@
 2025-03-05 23:20:34,750 - Archivo Obesity prediction.csv eliminado correctamente.
 2025-03-05 23:21:41,428 - Notebook modelo.ipynb ejecutado correctamente.
 2025-03-05 23:21:41,428 - Modelo generado exitosamente.
+2025-03-05 23:21:43,729 - Código subido exitosamente a GitHub.
+2025-03-05 23:21:43,730 - Pipeline finalizado satisfactoriamente.
+2025-03-05 23:35:11,517 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 23:35:12,322 - Datos descargados exitosamente desde Kaggle
+2025-03-05 23:35:12,341 - Datos extraídos con éxito.
+2025-03-05 23:35:12,365 - Backup realizado en backup_data.csv
+2025-03-05 23:35:12,862 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-05 23:35:13,298 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-05 23:36:07,923 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-05 23:36:07,924 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
+2025-03-05 23:36:07,924 - Modelo generado exitosamente.

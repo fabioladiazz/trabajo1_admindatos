@@ -68,6 +68,21 @@ cipher_suite = Fernet(key)
 def encrypt_data(data):
     return cipher_suite.encrypt(data.encode()).decode()
 
+def decrypt_data(encrypted_data):
+    return cipher_suite.decrypt(encrypted_data.encode()).decode()
+
+def encrypt_dataframe(df, filename="encrypted_data.csv"):
+    encrypted_df = df.applymap(lambda x: encrypt_data(str(x)))
+    encrypted_df.to_csv(filename, index=False)
+    logging.info(f"Datos encriptados y guardados en {filename}")
+
+def decrypt_dataframe(filename="encrypted_data.csv", output_filename="decrypted_data.csv"):
+    encrypted_df = pd.read_csv(filename)
+    decrypted_df = encrypted_df.applymap(lambda x: decrypt_data(str(x)))
+    decrypted_df.to_csv(output_filename, index=False)
+    logging.info(f"Datos desencriptados y guardados en {output_filename}")
+    return output_filename
+
 def backup_data(df, filename="backup_data.csv"):
     df.to_csv(filename, index=False)
     logging.info(f"Backup realizado en {filename}")
@@ -130,16 +145,18 @@ def main():
         # Hacer un backup antes de encriptar
         backup_data(df)
 
-        # Guardar datos procesados
-        df.to_csv("obesity_dataset.csv", index=False)
-        logging.info("Datos procesados guardados en obesity_dataset.csv")
+        # Encriptar datos antes de su uso
+        encrypt_dataframe(df)
 
-        # Eliminar el archivo original descargado
-        os.remove(filename)
-        logging.info(f"Archivo {filename} eliminado correctamente.")
+        # Desencriptar datos antes de ejecutar el notebook
+        decrypted_filename = decrypt_dataframe()
 
         # Ejecutar el notebook de entrenamiento del modelo
         run_jupyter_notebook("modelo.ipynb")
+
+        # Eliminar el archivo desencriptado después del uso
+        os.remove(decrypted_filename)
+        logging.info(f"Archivo {decrypted_filename} eliminado después de la ejecución del notebook.")
 
         # Verificar si el modelo fue generado correctamente
         check_model_file()
