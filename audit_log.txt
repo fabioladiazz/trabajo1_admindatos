@@ -56,3 +56,14 @@
 2025-03-06 01:11:58,735 - Notebook modelo.ipynb ejecutado correctamente.
 2025-03-06 01:11:58,736 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
 2025-03-06 01:11:58,736 - Modelo generado exitosamente.
+2025-03-06 01:12:03,614 - Código subido exitosamente a GitHub.
+2025-03-06 01:12:03,614 - Pipeline finalizado satisfactoriamente.
+2025-03-06 11:10:32,809 - Usuario admin ha iniciado sesión correctamente.
+2025-03-06 11:10:33,938 - Datos descargados exitosamente desde Kaggle
+2025-03-06 11:10:33,943 - Datos extraídos con éxito.
+2025-03-06 11:10:33,953 - Backup realizado en backup_data.csv
+2025-03-06 11:10:34,460 - Datos encriptados y guardados en encrypted_data.csv
+2025-03-06 11:10:34,912 - Datos desencriptados y guardados en decrypted_data.csv
+2025-03-06 11:11:38,723 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-06 11:11:38,724 - Archivo decrypted_data.csv eliminado después de la ejecución del notebook.
+2025-03-06 11:11:38,724 - Modelo generado exitosamente.
