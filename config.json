@@ -1,0 +1,16 @@
+{
+    "users": {
+        "admin": {
+            "access_level": "full",
+            "password": "fabe1d7bd356579289fbe99f1ae399b97d273385eaa739581c52fb02aa8bb9c1"
+        },
+        "analyst": {
+            "access_level": "read_only",
+            "password": "477bae40f81f8816f352103f7e12b5bd2e84d750df9e19a494e61a9481ce63ba"
+        },
+        "guest": {
+            "access_level": "restricted",
+            "password": "41405ca5793e919a55ed8deb01515df61b7b44da1370720af2e0402eaecb79e5"
+        }
+    }
+}

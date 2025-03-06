@@ -1,0 +1,12 @@
+2025-03-05 19:15:37,895 - Datos descargados exitosamente desde Kaggle
+2025-03-05 19:15:37,912 - Datos extraídos con éxito.
+2025-03-05 19:15:37,933 - Backup realizado en backup_data.csv
+2025-03-05 19:15:37,933 - Datos cifrados correctamente.
+2025-03-05 19:15:37,947 - Datos procesados guardados en obesity_dataset.csv
+2025-03-05 19:18:04,188 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 19:18:05,004 - Datos descargados exitosamente desde Kaggle
+2025-03-05 19:18:05,015 - Datos extraídos con éxito.
+2025-03-05 19:18:05,036 - Backup realizado en backup_data.csv
+2025-03-05 19:18:05,036 - Datos cifrados correctamente.
+2025-03-05 19:18:05,050 - Datos procesados guardados en obesity_dataset.csv
+2025-03-05 19:18:05,050 - Archivo Obesity prediction.csv eliminado correctamente.
