@@ -10,3 +10,11 @@
 2025-03-05 19:18:05,036 - Datos cifrados correctamente.
 2025-03-05 19:18:05,050 - Datos procesados guardados en obesity_dataset.csv
 2025-03-05 19:18:05,050 - Archivo Obesity prediction.csv eliminado correctamente.
+2025-03-05 23:20:33,814 - Usuario admin ha iniciado sesión correctamente.
+2025-03-05 23:20:34,700 - Datos descargados exitosamente desde Kaggle
+2025-03-05 23:20:34,714 - Datos extraídos con éxito.
+2025-03-05 23:20:34,734 - Backup realizado en backup_data.csv
+2025-03-05 23:20:34,750 - Datos procesados guardados en obesity_dataset.csv
+2025-03-05 23:20:34,750 - Archivo Obesity prediction.csv eliminado correctamente.
+2025-03-05 23:21:41,428 - Notebook modelo.ipynb ejecutado correctamente.
+2025-03-05 23:21:41,428 - Modelo generado exitosamente.

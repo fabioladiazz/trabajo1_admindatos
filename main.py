@@ -3,6 +3,7 @@ import pandas as pd
 import logging
 import json
 import hashlib
+import subprocess
 from cryptography.fernet import Fernet
 from kaggle.api.kaggle_api_extended import KaggleApi
 
@@ -71,6 +72,31 @@ def backup_data(df, filename="backup_data.csv"):
     df.to_csv(filename, index=False)
     logging.info(f"Backup realizado en {filename}")
 
+def run_jupyter_notebook(notebook_path):
+    try:
+        subprocess.run(["jupyter", "nbconvert", "--to", "notebook", "--execute", notebook_path], check=True)
+        logging.info(f"Notebook {notebook_path} ejecutado correctamente.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error al ejecutar el notebook: {e}")
+        raise Exception("Error al ejecutar el notebook")
+
+def check_model_file(model_file="modelo_final.pkl"):
+    if os.path.exists(model_file):
+        logging.info("Modelo generado exitosamente.")
+    else:
+        logging.warning("El archivo modelo_final.pkl no fue encontrado.")
+        raise FileNotFoundError("El archivo modelo_final.pkl no fue encontrado.")
+
+def push_to_github():
+    try:
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", "Automated update from pipeline"], check=True)
+        subprocess.run(["git", "push", "origin", "dev"], check=True)
+        logging.info("Código subido exitosamente a GitHub.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error al subir a GitHub: {e}")
+        raise Exception("Error al subir a GitHub")
+
 def main():
     try:
         # Pedir credenciales al usuario
@@ -104,9 +130,7 @@ def main():
         # Hacer un backup antes de encriptar
         backup_data(df)
 
-        logging.info("Datos cifrados correctamente.")
-
-        # Guardar datos procesados una sola vez con el nombre correcto
+        # Guardar datos procesados
         df.to_csv("obesity_dataset.csv", index=False)
         logging.info("Datos procesados guardados en obesity_dataset.csv")
 
@@ -114,11 +138,14 @@ def main():
         os.remove(filename)
         logging.info(f"Archivo {filename} eliminado correctamente.")
 
-        # Correr modelo.ipynb
+        # Ejecutar el notebook de entrenamiento del modelo
+        run_jupyter_notebook("modelo.ipynb")
 
-        # Verificar si hay un archivo modelo_final.pkl
+        # Verificar si el modelo fue generado correctamente
+        check_model_file()
 
-        # Subir a Github el proyecto
+        # Subir cambios a GitHub
+        push_to_github()
 
         logging.info("Pipeline finalizado satisfactoriamente.")
         print("Pipeline ejecutado satisfactoriamente.")
