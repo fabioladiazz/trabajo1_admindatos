@@ -89,8 +89,9 @@ def backup_data(df, filename="backup_data.csv"):
 
 def run_jupyter_notebook(notebook_path):
     try:
-        subprocess.run(["jupyter", "nbconvert", "--to", "notebook", "--execute", notebook_path], check=True)
+        subprocess.run(["jupyter", "nbconvert", "--to", "notebook", "--execute", notebook_path, "--output", notebook_path], check=True)
         logging.info(f"Notebook {notebook_path} ejecutado correctamente.")
+
     except subprocess.CalledProcessError as e:
         logging.error(f"Error al ejecutar el notebook: {e}")
         raise Exception("Error al ejecutar el notebook")
